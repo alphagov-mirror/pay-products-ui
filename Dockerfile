@@ -9,7 +9,7 @@ RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/
 
 RUN ["apk", "--no-cache", "upgrade"]
 
-RUN ["apk", "add", "--no-cache", "nodejs", "npm", "bash", "make", "g++", "python", "git"]
+RUN ["apk", "add", "--no-cache", "bash=5.0.0-r0", "make=4.2.1-r2", "g++=8.3.0-r0", "python=2.7.16-r1", "git=2.22.0-r0"]
 
 ENV PORT 9000
 EXPOSE 9000
